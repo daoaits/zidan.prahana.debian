@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        nav {
+    background-color: rgb(39, 39, 228);
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.brand {
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li a:hover {
+    color: yellow;
+}
+.isi {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(19, 17, 17);
+    box-shadow: 1px 1px 1px 1px blue;
+    color: white;
+    text-align: justify;
+}
+.isi h1 {
+    color: rgb(7, 7, 241);
+    text-shadow: 1px 1px 1px white;
+}
+header {
+    padding: 20px;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px black;
+    background: linear-gradient(to bottom ,blue,white)
+
+}
+header img {
+    max-width: 300px;
+    margin-left: 40%;
+}
+.isi a {
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.isi a:hover {
+    background-color: yellow;
+    color: black;
+}
+.isi p {
+    font-size: 17px;
+}
+footer {
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    text-align: center 
+    ;
+}
+.artikel {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px black;
+
+}
+.artikel p {
+    text-align: justify;
+    font-size: 17px;
+}
+.artikel h2 {
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+.artikel img {
+    max-width: 300px;
+}
+
+    </style>
+    <nav>
+    <div class="navbar">
+        <div class="brand">Zidan & Prahana</div>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <img src="debi.png">
+</header>
+<br>
+    <div class="artikel">
+        <h3>Sebelum Ketutorialnya Kita Harus Sedikit mengenal Apa Sih Itu Debian </h3>
+        <img src="linux.jpg">
+        <h2>Pengertian Debian OS</h2>
+        <p>Debian adalah salah satu sistem operasi Linux yang bersifat open source dan gratis untuk digunakan. Debian dikembangkan dan didistribusikan oleh Debian Project, sebuah komunitas yang didirikan pada tahun 1993 oleh Ian Murdock. Debian memiliki reputasi sebagai sistem operasi yang stabil dan aman untuk digunakan. Debian didasarkan pada kernel Linux, namun menyediakan lebih dari 59.000 paket perangkat lunak yang telah dikompilasi dan diuji oleh tim pengembang Debian. Paket-paket tersebut meliputi perangkat lunak sistem, server, dan aplikasi desktop seperti browser web, aplikasi kantor, permainan, dan sebagainya. Debian juga memiliki beberapa varian, seperti Debian GNU/Linux, Debian GNU/kFreeBSD, dan Debian GNU/Hurd. Debian GNU/Linux didistribusikan dengan menggunakan model pengembangan yang bersifat open source dan gratis, dengan proses pengembangan yang berlangsung di bawah pengawasan tim pengembang Debian.</p>
+    </div>
+       <br>
+    <div class="isi">
+        <h1>Konfigurasi ip address di debian</h1>
+        <p>Assalamualaikum wr,wb pada Kesempatan kali ini kami akan menjelaskan cara cara pemasangan DHCP Server
+           Sebelum itu siapkan bahan bahan di bawah ini:   
+        </p>
+        <p>Siapkan debian download klick tombol di bawah ini:</p>
+        <a href="https://www.debian.org/downloads">Download</a>
+        <p>pc dengan Windows 10 Portable atau lebih tinggi</p>
+        <p>Lalu virtual box klik tombol dibawah ini untuk mendownload</p>
+        <a href="https://www.virtualbox.org/downloads">Download</a>
+        <p>
+            jika bahan bahan sudah ada, silahkan instal virtual box lalu buat virtual machine untuk OS 
+        </p>
+        <br>
+        <p>1.buka debian dan masuk ke mode root
+            <br>2.jika sudah ketikkan nano /etc/network/interfaces untuk masuk ke dalam direktori interface jaringan
+            <br>3. ganti allow hotplug menjadi auto enp0s3 dan ip dhcp diganti ke ip static
+            <br>4.isikan dibawah konfigurasi auto enp0s3 ip address dan netmask nya contoh: address 192.168.10.1 netmask 255.255.255.0
+            <br>5.klik ctrl + x lalu tekan tombol "Y" di keyboard lalu tekan enter
+            <br>6. kemudian ketik /etc/init.d/networking restart untuk merestart konfigurasinya
+            <br>7. ketik ip a untuk mengcheck ip address kita berhasil terganti apa tidak
+            <br>8. jika sudah terganti maka selsai sudah konfigutasi ip address kita di debian 10</p>
+    </div>
+    <footer>
+        <p>Terima kasih telah mengunjungi website saya</p>
+        <p>Developer : Zidan & Prahana</p>
+    </footer>
+</body>
+</html>

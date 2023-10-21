@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #190038;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ffffffa9;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 2px 2px, #000000e4;
+    width: 100%;
+    padding: 30px 0;
+    padding-right: 0;
+}
+
+.navbar ul {
+    font-weight: 800;
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+}
+
+.navbar li a{
+    color: #190038;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.navbar h4 {
+    color: #ffb300;
+    padding-left: 2rem;
+    padding-right: 45rem;
+}
+
+.navbar a:hover {
+    color: #ffb300 ;
+}
+
+/* home */
+
+.home {
+    font-size: 20px;
+    margin-top: 15rem;
+    padding: 10rem;
+    color: #fff;
+}
+
+.title {
+    color: #fff;
+}
+.home h4 {
+    color: #ffb300;
+}
+
+.home p {
+    margin-top: 1rem;
+    padding-right: 10rem;
+}
+
+.contact {
+    background-color: #ffb300;
+    margin-top: 10rem;
+    padding: 10rem;
+    padding-top: 6rem;
+}
+.contact h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.contact ul {
+    margin-top: 2.5rem;
+    list-style: none;
+    text-align: center;
+}
+
+.contact li a {
+    color: #190038;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    background-color: #1f0036;
+    padding: 1.5rem;
+}
